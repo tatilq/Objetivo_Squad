@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objetivo Squad</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!---->
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 text-center">
+			<h1>Objetivo del Squad:80%</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-5 col-md-offset-2">
+			<div class="form-group">
+				<label><strong>Nombre de tu Squad:</strong></label>
+				<input class="form-control" id="nombreSquad" placeholder="0">
+			</div>
+			<div class="form-group">
+				<label><strong>Puntaje obtenido por tu Squad:</strong></label>
+				<input class="form-control" id="puntosSquad" placeholder="0">
+			</div>
+			<div class="form-group">
+				<label><strong>Maxima Cantidad de Puntos del Sprint:</strong></label>
+				<input class="form-control" id="maxPuntos" placeholder="0">
+			</div>
+			<button onclick="calcular_puntaje()" class="btn btn-default">Calcular</button>
+		</div>
+		<div class="col-md-3">
+			<h4 class="text-info">Porcentaje Total del Squad</h4>
+			<div id="salida" style="font-size:50px;" class="text-center">0</div>
+			<div id="mensajes"></div>
+		</div>
+	</div>
+</div>
+
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</html>
