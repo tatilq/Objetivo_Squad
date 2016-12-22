@@ -28,7 +28,7 @@ function calcular()
 		if (valorPorcentajeSquad >= 80 ) 
 		{
 			salida.innerHTML = valorPorcentajeSquad.toFixed(2)+"%";
-			document.getElementById("mensajes").innerHTML = '<div class="alert ">Muy bien Squad</div>';
+			document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">Muy bien Squad</div>';
 		}
 		else
 		{

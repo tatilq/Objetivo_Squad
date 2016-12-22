@@ -7,35 +7,92 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet icon" href="squadd.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/queries.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<title>Objetivo del Squad</title>
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 text-center">
-				<h1>Objetivo del Squad:80%</h1>
-				<hr>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<!--ESTA ES LA SECCION DEL HEADER-->
+<div id="particles-js"></div>
+	<header >
+        <div class="container-fluid degradado">
+            <div class="row menu ">
+            	<div class="col-xs-8 col-sm-6  col-md-8 ">
+               	 	<a href="index.html"><img src="img/logo_laboratoria.png" alt="Logo de Laboratoria" class="img-responsive logo option animated fadeInDown" ></a>
+            	</div>
+    		</div>
+        </div>
+		<div class="hero">
+            <div class="container-fluid degradado">
+         		<div class="banner ">
+	         		<div class="container">
+	         			<div class="row">
+	         				<div class="frase  text-center"> 
+								<h2 class="option animated tada" >OBJETIVO DEL SQUAD :80%</h2>
+							</div>
+	         			</div>
+         			</div>
+				</div>
+				<div class="objetivo option animated slideInLeft">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 col-md-offset-2 text-center">
+								<div class="form-group">
+									<label for="exampleInputEmail1" >Puntaje obtenido por tu Squad:</label>
+									<input type="email" class="form-control" id="puntos_Squad" placeholder="0">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1"  class="text-center">Maxima Cantidad de Puntos del Sprint:</label>
+									<input class="form-control" id="max_Puntos" placeholder="0">
+								</div>
+								<button onclick="calcular()" class="btn btn_menu">Calcular</button>
+							</div>
+							<div class="col-md-4 text-center">
+								<label>Porcentaje Total del Squad</label>
+								<div id="salida" style="font-size:40px;" class="text-center">--</div>
+								<br>
+								<div id="mensajes" style="font-size:20px;" class="text-center"></div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-5 col-md-offset-2">
-				<div class="form-group">
-					<label for="exampleInputEmail1">Puntaje obtenido por tu Squad:</label>
-					<input type="email" class="form-control" id="puntos_Squad" placeholder="0">
+	</header>
+	<!--ESTE ES EL FOOTER-->
+
+	<footer>
+		<div class="container" id="contacto">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<h4><strong>CONTÁCTAME</strong></h4>
+					<hr>
+					<p>¿Listo para empezar tu siguiente proyecto?.Genial, dame una llamada o enviame un correo y te respondere lo mas rapido que pueda</p>
 				</div>
-				<div class="form-group">
-					<label for="exampleInputPassword1">Maxima Cantidad de Puntos del Sprint:</label>
-					<input class="form-control" id="max_Puntos" placeholder="0">
-				</div>
-				<button onclick="calcular()" class="btn btn-default">Calcular</button>
 			</div>
-			<div class="col-md-3 text-center">
-				<h4 >Porcentaje Total del Squad</h4>
-				<div id="salida" style="font-size:40px;" class="text-center">0</div>
-				<div id="mensajes" style="font-size:25px;" class="text-center"></div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="col-md-6 text-center">							
+						<span class=" icon_footer fa fa-phone"></span>
+						<p>925-796-255</p>
+					</div>
+					<div class="col-md-6 text-center">
+						<span class=" icon_footer fa fa-envelope-o"></span>
+						<p class="correo">tati34che@gmail.com</p>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
+	</footer>
+	<!--SCRIPT DE ANIMACIONES-->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
 </body>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 </html>

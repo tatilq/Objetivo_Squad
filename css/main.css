@@ -1,0 +1,35 @@
+body
+{
+    font-family: 'Courgette'
+}
+#particles-js {
+    width: 100%;
+    height: 100%auto;
+    position: fixed;
+
+}
+header{
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: url('../img/header.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  
+}
+.logo{  width: 30%; }
+.btn_menu{ background: rgba(139,0,0,0.4); border:2px solid black; }
+.degradado{ background-color: rgba( 178,34,34,0.4); }
+.hero .objetivo{ background-color:rgba(220,20,60,0.8); margin:0 -15px; color: white; padding: 50px 0px; }
+.hero .frase{ margin: 0 auto; padding:100px; width: 70%; color: white;}
+.hero .frase h2{ font-size: 40px;}
+.objetivo input{ width: 60%;margin: 0 auto;text-align: center; }
+.objetivo label{ font-size: 18px; margin-bottom: 15px; }
+#salida{ color: white; width: 60%; margin: 0 auto; background: rgba(60,80,80,0.5); border:2px solid black; }
+#mensajes{width: 80%; margin: 0 auto;}
+
+/*ESTA  ES LA SECCION DEL FOOTER*/
+footer{padding: 30px 0;}
+footer .icon_footer{ font-size: 40px;color: rgb(240,95,64);}
+footer .correo{color: rgb(240,95,64);}
