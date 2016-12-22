@@ -9,8 +9,8 @@ function calcular()
 	var  valorpuntosSquad=puntosSquad.value;
 	var  valormaxPuntos=maxPuntos.value;
 
-	porcentaje_Squad = (100*parseFloat(puntosSquad.value)) / parseFloat(maxPuntos.value);
-	var valorPorcentajeSquad= parseFloat(porcentaje_Squad);
+	porcentaje_Squad = (100*(puntosSquad.value) / maxPuntos.value);
+	var valorPorcentajeSquad= porcentaje_Squad;
 
 	if(valorpuntosSquad == "" || valormaxPuntos == "" )
 	{

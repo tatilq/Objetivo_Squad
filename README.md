@@ -1,6 +1,6 @@
 # Ejercicio Objetivo_Squad
 
-Inicio: Objetivo Squad
+*Inicio: Objetivo Squad*
 
 ## Ingreso datos
 - puntosSquad
