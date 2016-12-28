@@ -2,20 +2,20 @@
 var puntosSquad = document.getElementById("puntos_Squad");
 var maxPuntos = document.getElementById("max_Puntos");
 var divSalida = document.getElementById("salida");
-var porcentaje_Squad = 0;
+var porcentaje_Squad;
 
 function calcular()
 {
 	var  valorpuntosSquad=puntosSquad.value;
 	var  valormaxPuntos=maxPuntos.value;
 
-	porcentaje_Squad = (100*(puntosSquad.value) / maxPuntos.value);
+	porcentaje_Squad = (100*(puntosSquad.value) / maxPuntos.value);//regla de tres
 	var valorPorcentajeSquad= porcentaje_Squad;
 
 	if(valorpuntosSquad == "" || valormaxPuntos == "" )
 	{
 
-		salida.innerHTML = "0.00";
+		salida.innerHTML = "nada";
 		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">No se ingresaron valores</div>';
 	}
 	else if( valorPorcentajeSquad > 100  ||  valorPorcentajeSquad < 0)
